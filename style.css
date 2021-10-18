@@ -71,3 +71,43 @@ img {
 .clear {
   clear: both;
 }
+
+/* ================  MEDIA QUERIES  */
+
+@media (max-width: 421px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .row {
+    width: 100%;
+    margin: 0;
+    padding: 20px 0;
+  }
+
+  img {
+    height: 100px;
+  }
+
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    width: 100%;
+    float: none;
+    display: inline-block;
+  }
+
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    float: none;
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  #lezioni,
+  #why {
+    background-color: lightyellow;
+  }
+}
